@@ -1,0 +1,23 @@
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>CRUD App</title>
+       <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+     </head>
+     <body class="bg-gray-100 p-5">
+       <div class="container mx-auto">
+         <h1 class="text-2xl font-bold mb-5">CRUD App</h1>
+         <div>
+           <input id="name" type="text" placeholder="Name" class="mb-2 p-2 border border-gray-300 rounded">
+           <input id="description" type="text" placeholder="Description" class="mb-2 p-2 border border-gray-300 rounded">
+           <button onclick="createItem()" class="mb-3 p-2 bg-blue-500 text-white rounded">Create Item</button>
+         </div>
+         <ul id="item-list" class="list-disc pl-5">
+           <!-- Items will be dynamically added here -->
+         </ul>
+       </div>
+       <script src="main.js"></script>
+     </body>
+     </html>
